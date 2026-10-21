@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pesquisa SenaiTec</title>
+</head>
+<body>
+    <main>
+        <header>
+            <img src="./img/logo.png" alt="Logo SenaiTec">
+            <h1>Pesquisa SenaiTec</h1>
+        </header>
+        <section>
+            <form action="" method="get">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+
+                    <label for="userName">Nome:</label>
+                    <input type="text" name="userName" id="userName" required>
+                    <br>
+                    <label for="userAge">Idade:</label>
+                    <input type="number" name="userAge" id="userAge" required min="12" max="100">
+
+                    <br>
+                    <label for="userBirthDate">Data de Nascimento:</label>
+                    <input type="date" name="userBirthDate" id="userBirthDate">
+
+                    <br>
+                    <label for="userEmail">Email:</label>
+                    <input type="email" name="userEmail" id="userEmail" required>
+
+                    <br>
+                    <label for="userPhone">Telefone:</label>
+                    <input type="tel" name="userPhone" id="userPhone" pattern="[0-9]{11}" placeholder="21987654321">
+                    
+                    <br>
+                    <label for="userImage">Upload da foto:</label>
+                    <input type="file" name="userImage" id="userImage">
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Perfil</legend>
+
+                    <p>Gênero</p>
+
+                    <input type="radio" name="useGender" id="userGender1"
+                    value="Masculino">
+                    <label for="userGender1">Masculino</label>
+                    <br>
+
+                    <input type="radio" name="useGender" id="userGender2" 
+                    value="Feminino">
+                    <label for="userGender2">Feminino</label>
+                    <br>
+
+                    <input type="radio" name="useGender" id="userGender3"
+                    value="outro">
+                    <label for="userGender3">Prefiro não informar</label>
+                    <br>
+
+                    <label for="userMaritalStatus">Estado Civil:</label>
+                    <select name="userMaritalStatus" id="userMaritalStatus">
+                        <option value="">Selecione...</option>
+                        <option value="solteiro">Solteiro(a)</option>
+                        <option value="casado">Casado(a)</option>
+                        <option value="divorciado">Divorciado(a)</option>
+                        <option value="viuvo">Viúvo(a)</option>
+                        <option value="uniaoEstavel">União estável</option>
+                    </select>
+                    <br>
+                    <label for="userState">Estado:</label>
+                    <select name="userState" id="userState">
+                        <option value="">Selecione...</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+
+                <br>
+                    <label for="userCity">Cidade:</label>
+                    <input type="text" name="userCity" id="userCity" placeholder="Digite sua cidade">
+
+                        
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Hábitos</legend>
+
+                    <p>Redes Sociais</p>
+
+
+                    <label for="userSocial">Instagram</label>
+                    <input type="checkbox" name="userSocial" id="userSocial1" value="Instagram">
+                    <br>
+
+
+                    <label for="userSocial">Facebook</label>
+                    <input type="checkbox" name="userSocial" id="userSocial2" value="Facebook">
+                    <br>
+
+
+                    <label for="userSocial">Twitter</label>
+                    <input type="checkbox" name="userSocial" id="userSocial3" value="Twitter">
+                    <br>
+
+
+                    <label for="userSocial">TikTok</label>
+                    <input type="checkbox" name="userSocial" id="userSocial4" value="TikTok">
+                    <br>
+
+
+                    <label for="userSocial">Outro</label>
+                    <input type="checkbox" name="userSocial" id="userSocial5" value="Outro">
+                    <br>
+
+
+                    
+                    <label for="userMusicStyle">Estilo Musical:</label>
+
+                    <input type="text" name="userMusicStyle" id="userMusicStyle" list="musicStyles" placeholder="Escolha um estilo">
+
+                    <datalist id="musicStyles">
+                        <option value="Rock">
+                        <option value="Pop">
+                        <option value="Sertanejo">
+                        <option value="Funk">
+                        <option value="Eletrônica">
+                        <option value="MPB">
+                    </datalist>
+                    <br>
+                    
+                    <label for="userFavoriteColor">Cor favorita:</label>
+                    <input type="color" name="userFavoriteColor" id="userFavoriteColor">
+
+                
+                </fieldset>
+
+                <fieldset>
+                    <legend>Satisfação</legend>
+                    <p>Como você avalia nossa pesquisa?</p>
+                    <input type="radio" name="userSatisfaction" id="satisfaction1" value="Ótima">
+                    <label for="satisfaction1">Ótima</label>
+                    <br>
+                    <input type="radio" name="userSatisfaction" id="satisfaction2" value="Boa">
+                    <label for="satisfaction2">Boa</label>
+                    <br>
+                    <input type="radio" name="userSatisfaction" id="satisfaction3" value="Regular">
+                    <label for="satisfaction3">Regular</label>
+                    <br>
+                    <input type="radio" name="userSatisfaction" id="satisfaction4" value="Ruim">
+                    <label for="satisfaction4">Ruim</label>
+                    <br>
+
+                    <label for="userComments">Deixe seu comentário</label>
+                    <textarea name="userComments" id="userComments"></textarea>
+                </fieldset>
+
+                
+                <button type="submit">Enviar</button> 
+
+            </form>
+        </section> 
+    </main>
+</body>
+</html>
